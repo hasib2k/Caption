@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Practice App - Real-time Voice Recognition</title>
+    <meta name="description" content="Practice speaking with real-time speech recognition and synchronized text highlighting. Improve your pronunciation and speaking skills.">
+    <meta name="keywords" content="speech practice, voice recognition, text-to-speech, language learning, pronunciation">
+    <meta name="author" content="Speech Practice App">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Speech Practice App">
+    <meta property="og:description" content="Real-time speech recognition practice with synchronized highlighting">
+    <meta property="og:image" content="/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦉</text></svg>">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="mascot">🦉</div>
+            <h1>Speech Practice</h1>
+            <p class="subtitle">Practice speaking and see your progress!</p>
+        </div>
+
+        <div class="progress-section">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <p class="progress-text" id="progressText">0% Complete</p>
+        </div>
+        
+        <div class="input-section">
+            <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+            <div class="input-buttons">
+                <button id="loadTextBtn">Load Text</button>
+                <button id="startBtn" class="btn-start" disabled>
+                    <span class="icon">🎤</span>
+                    Start Speaking
+                </button>
+                <button id="readTextBtn" class="btn-read" disabled>
+                    <span class="icon">🔊</span>
+                    Read Text Aloud
+                </button>
+            </div>
+        </div>
+
+        <div class="display-section">
+            <div id="textDisplay" class="text-display">
+                <p class="placeholder">Your text will appear here...</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="stopBtn" class="btn-stop" disabled>
+                <span class="icon">⏹️</span>
+                Stop
+            </button>
+            <button id="resetBtn" class="btn-reset">
+                <span class="icon">🔄</span>
+                Reset
+            </button>
+        </div>
+
+        <div class="status">
+            <p id="statusMessage">Ready</p>
+            <p id="recognizedText" class="recognized"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "speech-practice-app",
+  "version": "1.0.0",
+  "description": "Real-time speech-to-text practice application with synchronized highlighting",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "speech-recognition",
+    "text-to-speech",
+    "web-speech-api",
+    "education",
+    "language-learning"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
